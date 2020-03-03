@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AB996167-9E40-4AF8-927F-AE3D3306BBEF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\beulzt27\source\repos\MineCraft-One-Week-Challenge-44ace72573833796da05a97972be5765b05ce94f\glm-0.9.9.7\glm;C:\Users\beulzt27\source\repos\MineCraft-One-Week-Challenge-44ace72573833796da05a97972be5765b05ce94f\SFML-2.5.1\include;C:\Users\beulzt27\source\repos\MineCraft-One-Week-Challenge-44ace72573833796da05a97972be5765b05ce94f\SFML-2.5.1\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\beulzt27\source\repos\MineCraft-One-Week-Challenge-44ace72573833796da05a97972be5765b05ce94f\glm-0.9.9.7\glm;C:\Users\beulzt27\source\repos\MineCraft-One-Week-Challenge-44ace72573833796da05a97972be5765b05ce94f\SFML-2.5.1\include;C:\Users\beulzt27\source\repos\MineCraft-One-Week-Challenge-44ace72573833796da05a97972be5765b05ce94f\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-audio.lib;sfml-network.lib;sfml-window.lib;sfml-system.lib;sfml-graphics.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Application.cpp" />
+    <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="source\Context.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\maths\Matrix.cpp" />
+    <ClCompile Include="source\Model.cpp" />
+    <ClCompile Include="source\player\Player.cpp" />
+    <ClCompile Include="source\renderer\QuadRenderer.cpp" />
+    <ClCompile Include="source\renderer\RenderMaster.cpp" />
+    <ClCompile Include="source\shaders\BasicShader.cpp" />
+    <ClCompile Include="source\shaders\Shader.cpp" />
+    <ClCompile Include="source\shaders\ShaderLoader.cpp" />
+    <ClCompile Include="source\states\PlayingState.cpp" />
+    <ClCompile Include="source\texture\BasicTexture.cpp" />
+    <ClCompile Include="source\util\FileUtil.cpp" />
+    <ClCompile Include="source\util\Random.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Application.h" />
+    <ClInclude Include="source\Camera.h" />
+    <ClInclude Include="source\Context.h" />
+    <ClInclude Include="source\Entity.h" />
+    <ClInclude Include="source\maths\glm.h" />
+    <ClInclude Include="source\maths\Matrix.h" />
+    <ClInclude Include="source\Model.h" />
+    <ClInclude Include="source\player\Player.h" />
+    <ClInclude Include="source\renderer\QuadRenderer.h" />
+    <ClInclude Include="source\renderer\RenderMaster.h" />
+    <ClInclude Include="source\shaders\BasicShader.h" />
+    <ClInclude Include="source\shaders\Shader.h" />
+    <ClInclude Include="source\shaders\ShaderLoader.h" />
+    <ClInclude Include="source\states\PlayingState.h" />
+    <ClInclude Include="source\states\StateBase.h" />
+    <ClInclude Include="source\texture\BasicTexture.h" />
+    <ClInclude Include="source\util\FileUtil.h" />
+    <ClInclude Include="source\util\NonCopyable.h" />
+    <ClInclude Include="source\util\Random.h" />
+    <ClInclude Include="source\util\Singleton.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
